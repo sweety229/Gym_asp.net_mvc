@@ -1,0 +1,53 @@
+﻿@model IEnumerable<GymProjectMvc.Models.GymModel>
+
+@{
+    ViewBag.Title = "edit";
+}
+
+
+@foreach (var list in Model)
+{
+    <div class="container" style="background:black; margin:50px; padding:80px; color:white;">
+        <form action="/Home/UpdateMember" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="First Name"> Member Name</label>
+                    <input type="text" class="form-control" id="inputpassword" name="memberName" value="@Html.DisplayFor(ModelItem => list.memberName)">
+                    <input type="hidden" class="form-control" name="id" value="@Html.DisplayFor(ModelItem => list.id)" />
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="contact"> Contact Number</label>
+                    <input type="text" class="form-control" id="inputpassword" name="Contact" value="@Html.DisplayFor(ModelItem => list.Contact)">
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" name="emailId" value="@Html.DisplayFor(ModelItem => list.emailId)">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="datetime"> Date&Time</label>
+                    <input type="datetime-local" class="form-control" id="datetime" name="startdate" value="@Html.DisplayFor(Modeltem => list.startdate)">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Address</label>
+                    <textarea type="text" class="form-control" id="inputAddress" name="Address" placeholder="1234 Main St">@Html.DisplayFor(ModelItem => list.Address)</textarea>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" name="City" value="@Html.DisplayFor(ModelItem => list.City)">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary"> Submit </button>
+        </form>
+    </div>
+
+}

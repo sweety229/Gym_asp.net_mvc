@@ -1,0 +1,312 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+
+    .navbar {
+        background-color: black;
+        height: 75px;
+        justify-content: end;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    ul, li {
+        display: flex;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 15px 0 40px;
+    }
+
+    a {
+        color: white;
+        margin: 0 75px 0 50px;
+        
+    }
+
+    a:hover{
+        color:grey;
+        background-color:white;
+        text-decoration:none;
+    }
+
+    h2 {
+        margin-right: 25%;
+        display:flex;
+    }
+
+    .img-fluid {
+        max-height:400px;
+        width:100%;
+    }
+
+    .ft-img {
+        background-image:linear-gradient(grey,black);
+        width:100%;
+        }
+
+    .row{
+        margin-top:25px;
+    }
+
+    h5{
+        margin-right:100px;
+    }
+
+    
+</style>
+
+
+
+<nav class="navbar navbar-expand-lg text-light fixed ">
+
+    <h2>Fitness Kingdom</h2>
+    <ul>
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Gallery</li>
+        <li class="nav-item">Contact</li>
+        <li class="nav-item">About</li>
+    </ul>
+
+    <a href="#" data-toggle="modal" data-target="#registration">Register</a>
+</nav>
+
+<div class="gym-content">
+
+    <div class="background">
+        <img src="https://thumbs.dreamstime.com/b/barbell-kettlebells-y-mancuernas-con-placas-negras-en-el-suelo-sobre-esteras-fondo-deporte-fitness-ejercicio-o-levantamiento-de-217726403.jpg" class="img-fluid" />
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://artimg.gympik.com/articles/wp-content/uploads/2019/10/Featured1.jpg" class="img-fluid" alt="" />
+        </div>
+
+        <div class="col-md-6">
+            <img src="https://www.propertyfinder.eg/blog/wp-content/uploads/2021/04/shutterstock_412095283-1-800x512.jpg" class="img-fluid" alt="" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-body rounded-0">
+                    <img src="https://www.verywellfit.com/thmb/R7M0FlXHQI7EArWaKgRbg6MnGIs=/2002x2002/smart/filters:no_upscale()/cardiovascular-endurance-59f7fc2faad52b00100156aa.jpg" class="img-fluid img">
+                    <p class="text-justify"><b>Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot.Running is a type of gait characterized by an aerial phase in which all feet are above the ground (though there are exceptions).This is in contrast to walking, where one foot is always in contact with the ground, the legs are kept mostly straight and the center of gravity vaults over the stance leg or legs in an inverted pendulum fashion.[2] A feature of a running body from the viewpoint of spring-mass mechanics is that changes in kinetic and potential energy within a stride occur simultaneously, with energy storage accomplished by springy tendons and passive muscle elasticity </b></p>
+                    <div class="d-flex justify-content-end ">
+                        <button type="button" class="btn btn-primary">
+                            <a class="text-light" href="#"><b>Read More</b></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body rounded-0">
+                    <h4 class="text-center"><b>News & Events</b></h4>
+                    <h5><b>A 'cousin' of Viagra reduces obesity by stimulating cells to burn fat</b></h5>
+                    <p class="text-justify">
+                        <b>
+                            Researchers at Johns Hopkins Medicine have found that a drug first developed to treat Alzheimer's disease,schizophrenia and sickle cell disease reduces obesity and fatty liver in mice and improves their heart function without changes in food intake or daily activity.
+                            These findings, published online Oct.7 in the Journal of Clinical Investigation,reveal that a chemical inhibitor of the enzyme PDE9 stimulates cells to burn more fat.This occurred in male mice and in female mice whose sex hormones were reduced by removing their ovaries,thus mimicking menopause.Postmenopausal women are well known to be at increased risk for obesity around their waist as well as at risk for cardiovascular and metabolic disease.
+                            Fitness First is the company behind International Fitness Week, which takes place each February. Initiatives in 2009 have included the launch of Strictly Fit in conjunction with BBC Worldwide, intended to be a low-impact aerobics group class.
+
+                            The company opened the concept club ‘The Zone’ in Australia in 2013. In 2014, Fitness First launched their Global Rebrand and opened ‘BEAT’; a heart rate based training micro gym in London, and their Australia club in Melbourne the same year.
+                            n August 2008, Fitness First took a club member to the Australian New South Wales (NSW) Supreme Court to recover a $200 cancellation fee. The court ruled in favour of Fitness First, although she could not afford to pay and was no longer able to use the gym on medical grounds. The patient explained her medical condition before signing up and was instructed to sign the contract. Fitness First sought action to ensure that gym contracts with clients were still legally valid even if the court were to find that the client did not understand what he or she had signed.
+                        </b>
+                    </p>
+                    <div class="d-flex justify-content-end ">
+                        <button type="button" class="btn btn-primary ">
+                            <a class="text-light" href="#"><b>Read More</b></a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://www.johnsonfitness.com/Content/images/2021/06/matrix-treadmill-male.jpg">
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://marvel-b1-cdn.bc0a.com/f00000000123778/blog.kellerlogistics.com/hs-fs/hubfs/Blog_Pictures/Jump%20into%20Wellness%20Program.jpg?width=560&name=Jump%20into%20Wellness%20Program.jpg">
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://silicon.nyc/wp-content/uploads/2018/10/Das-Trainingslager-Personal-Training-Berlin-Personal-Trainer-Berlin-Fitness-Gesundheit-Healthy__1539724933_135.84.167.2.jpg">
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://fitonclick.com/storage/blog/images/44/FOC_blog_441535211861.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://www.webfreen.com/wp-content/uploads/2022/08/6-Reasons-You-Should-Never-Open-a-Gym.jpg" class="img-fluid" alt="" />
+        </div>
+
+        <div class="col-md-6">
+            <img src="https://images.squarespace-cdn.com/content/v1/582173226b8f5b121612ca03/1606694697258-VOMH5ODP86FWUBHIAT9J/New+space+same+vibe.png" class="img-fluid" alt="" />
+        </div>
+    </div>
+</div>
+
+
+
+<!----  footer  -->
+
+<footer class=" text-light ft-img mt-5 ">
+    <div class="row ">
+        <div class="col-md-3">
+            <h5 class="text-center"><b>Product</b></h5>
+            <li class="text-center">Templates</li>
+            <li class="text-center">Explore</li>
+            <li class="text-center">Features</li>
+            <li class="text-center">Website builder</li>
+            <li class="text-center">My sites</li>
+            <li class="text-center">App market</li>
+            <li class="text-center">Online store</li>
+            <li class="text-center">Create a blog</li>
+            <li class="text-center">logo maker</li>
+            <li class="text-center">Business Email</li>
+        </div>
+
+        <div class="col-md-3">
+
+            <h5 class="text-center"><b>Comapany</b></h5>
+            <li class="text-center">About Wix</li>
+            <li class="text-center">Press room</li>
+            <li class="text-center">Investor Relations</li>
+            <li class="text-center">Wix Jobs</li>
+            <li class="text-center">Design Assers</li>
+            <li class="text-center">Abuse </li>
+            <li class="text-center">Affiliate</li>
+            <li class="text-center">Wix Capital</li>
+            <li class="text-center">Contact Us</li>
+            <li class="text-center">Terms of use</li>
+        </div>
+
+        <div class="col-md-3">
+            <h5 class="text-center"><b>Community</b></h5>
+            <li class="text-center">Wix Marketplace</li>
+            <li class="text-center">wix blog</li>
+            <li class="text-center">Student Website</li>
+            <li class="text-center">Wix Jobs</li>
+            <li class="text-center">wix Encyclopedia</li>
+            <li class="text-center">Partner Community</li>
+        </div>
+
+        <div class="col-md-3 br-2">
+            <h2 class="text-center"><b>Wix</b></h2>
+            <p class="text-center">
+                Wix.com is a leading cloud-based development
+                platform with millions of users worldwide.
+                We make it easy for everyone to
+                create a beautiful, professional web presence.
+
+                Promote your business, showcase your art,
+                set up an online shop or just test out new ideas.
+                The Wix website builder has everything you need to
+                create a fully personalized,high-quality free website.
+
+                © 2006-2021 Wix.com, Inc
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  registration Modal -->
+<div class="modal fade" id="registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form action="/Home/AddMember" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="First Name"> Member Name</label>
+                            <input type="text" class="form-control" id="inputpassword" name="memberName">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="contact"> Contact Number</label>
+                            <input type="text" class="form-control" id="inputpassword" name="Contact">
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" name="emailId">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="datetime"> Date&Time</label>
+                            <input type="datetime-local" class="form-control" id="datetime" name="startdate">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress">Address</label>
+                            <textarea type="text" class="form-control" id="inputAddress" name="Address" placeholder="1234 Main St"> </textarea>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity" name="City">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary"> Submit </button>
+                </form>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+
